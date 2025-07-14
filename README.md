@@ -31,4 +31,11 @@ You can find the source code for each project in its respective folder.
 ---
 
 ## 📁 Folder Layout
-
+ResponsiveWebDesign-freecodecamp/
+│
+├── tribute-page/
+├── survey-form/
+├── product-landing-page/
+├── technical-documentation/
+├── personal-portfolio/
+└── README.md
