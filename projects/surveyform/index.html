@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Seminar Survey Form</h1>
+    <p id="description">Thank you for giving your time and valuable feedback</p>
+
+    <form id="survey-form" action="">
+      <fieldset>
+        <label id="name-label" for="name">Enter Your Full Name:
+          <input id="name" name="name" type="text" required placeholder="e.g., Ravi Kumar" />
+        </label>
+
+        <label id="email-label" for="email">Enter Your Email:
+          <input id="email" name="email" type="email" required placeholder="example@mail.com" />
+        </label>
+
+        <label id="number-label" for="number">Enter Your Age:
+          <input id="number" name="number" type="number" min="18" max="99" required placeholder="18–99" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">Select your profession:
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Graduate</option>
+            <option value="3">Postgraduate</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Give overall rating for this seminar:</legend>
+        <label for="1"><input id="1" type="radio" name="rating" value="1" />1</label>
+        <label for="2"><input id="2" type="radio" name="rating" value="2" />2</label>
+        <label for="3"><input id="3" type="radio" name="rating" value="3" />3</label>
+        <label for="4"><input id="4" type="radio" name="rating" value="4" />4</label>
+        <label for="5"><input id="5" type="radio" name="rating" value="5" />5</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Which topics interested you the most?</legend>
+        <label><input type="checkbox" name="topics" value="tech" /> Technology</label>
+        <label><input type="checkbox" name="topics" value="design" /> Design</label>
+        <label><input type="checkbox" name="topics" value="ai" /> AI</label>
+        <label><input type="checkbox" name="topics" value="blockchain" /> Blockchain</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="comment">Any additional comments:
+          <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Any improvements..."></textarea>
+        </label>
+      </fieldset>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
